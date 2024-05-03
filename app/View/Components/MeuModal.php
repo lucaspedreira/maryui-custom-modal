@@ -45,7 +45,7 @@ class MeuModal extends Component
                         @endif
                     @endif
                 >
-                    <div class="modal-box {{ $boxClass }}">
+                    <div  @click.stop class="modal-box {{ $boxClass }}">
                         @if($title)
                             <x-mary-header :title="$title" :subtitle="$subtitle" size="text-2xl" :separator="$separator" class="mb-5" />
                         @endif

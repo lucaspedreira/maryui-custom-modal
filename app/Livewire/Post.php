@@ -15,7 +15,7 @@ class Post extends Component
         return view('livewire.post');
     }
 
-    public function close()
+    public function close(): void
     {
         $this->reset('title');
         $this->myModal3 = false;
